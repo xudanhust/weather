@@ -1,5 +1,4 @@
 # 命令行天气预报
-___
 ## 数据
 天气数据来自中央气象台数据接口：[http://www.weather.com.cn/data/cityinfo/101010100.html](http://www.weather.com.cn/data/cityinfo/101010100.html)
 

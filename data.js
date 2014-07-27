@@ -12,8 +12,6 @@ for(var i=0, len = content.length; i<len; i++){
     data[temp[0]] = temp[1];
 }
 
-// module.exports = data;
-
 fs.writeFileSync(dataPath, JSON.stringify(data));
 
-console.log('Data process done!');
+console.log('Data is OK!');
