@@ -7,5 +7,6 @@
         "email": "xudanhust@gmail.com"
     },
     "devDependencies": {
-        "iconv-lite": "0.2.11"    }
+        "iconv-lite": "0.2.11"
+    }
 }

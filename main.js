@@ -7,7 +7,7 @@ var weatherUrl = 'http://www.weather.com.cn/data/cityinfo/',
     // ipUrl = 'http://curlmyip.com/',
     ipUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php';
 
-var data = JSON.parse(fs.readFileSync('weathercity.code.json', 'utf-8')),
+var data = JSON.parse(fs.readFileSync('data/weathercity.code.json', 'utf-8')),
     cityName = process.argv.splice(2)[0],
     cityCode;
 
