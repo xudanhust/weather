@@ -1,12 +1,9 @@
 var http = require('http');
 
-var url = 'http://www.weather.com.cn/data/cityinfo/';
+module.exports = function(url, callback){
 
-module.exports = function(cityCode, callback){
-
-    var requestUrl = url + cityCode + '.html';
-
-    http.get(requestUrl, function(res) {
+    http.get(url, function(res) {
+        // console.log('request: ' + url + '\r');
         var data;
         res.on('data', function(chunk) {
             data = chunk;
