@@ -29,7 +29,7 @@ describe('module: getCityCode', function(){
         assert.equal('101210101', getCityCode('杭州'));
         assert.equal('101200101', getCityCode('武汉'));
         assert.equal('101180301', getCityCode('新乡'));
-    })
+    });
 });
 
 describe('module: getWeather', function(){

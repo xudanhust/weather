@@ -3,8 +3,11 @@ var getCityCode = require('./lib/citycode'),
     getWeather = require('./lib/weather');
 
 getCityName(process.argv.splice(2)[0], function(cityName){
-    getWeather(getCityCode(cityName), function(o){
-        var o = o.weatherinfo;
-        console.log(o.city + '今天天气：' + o.weather + ', ' + o.temp2 + '到' + o.temp1 );
-    });
+    var cityCode = getCityCode(cityName);
+    if(cityCode){
+        getWeather(cityCode, function(o){
+            var o = o.weatherinfo;
+            console.log(o.city + '今天天气：' + o.weather + ', ' + o.temp2 + '到' + o.temp1 );
+        });
+    }
 });
