@@ -1,0 +1,10 @@
+{
+    "name": "weather-forecast",
+    "description": "weather forecast in command line",
+    "version": "0.0.1",
+    "author": {
+        "name": "xudanhsut",
+        "email": "xudanhust@gmail.com"
+    },
+    "devDependencies": {}
+}
